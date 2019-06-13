@@ -1,0 +1,122 @@
+/* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
+
+
+@font-face{
+  font-family: 'century';
+  src: url(century.ttf);
+}
+  .events{
+    height:50px;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+  }
+  .events span{
+    padding:0px 25px;
+  /*  border-left: 5px solid white;
+    border-right: 5px solid white;*/
+  }
+  .events-after{
+    height: 1px;
+    background-color: white;
+    left: 50vw;
+    width: 20vw;
+    position: relative;
+    transform: translateX(-50%);
+  }
+.nn{
+  height:60vh;
+  width:100%;
+  position:relative;
+  overflow-x: hidden;
+  background-image:url(events.jpg);
+  background-attachment: fixed;
+}
+.nn ul{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+.nn ul li{
+  display:block;
+  width:210px;
+  height:230px;
+  background:white;
+  position: absolute;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.5);
+  top:0;
+  left:0;
+  transform-origin: bottom center;
+  transform: rotate(10deg) skew(-30deg);
+  transition: .5s;
+  border-radius: 15px;
+}
+.nn ul li span{
+  display:block;color: #f12121;
+  text-align: center;
+  font-size: 4.5vh;
+  font-family: monospace;
+  line-height: 280px;
+}
+.nn ul li:nth-child(1){
+  transform: rotate(10deg) skew(-30deg) translate(25px,25px);
+}
+.nn ul li:nth-child(2){
+  transform: rotate(10deg) skew(-30deg) translate(10px,10px);
+}
+.nn ul li:nth-child(3){
+  transform: rotate(10deg) skew(-30deg) translate(-5px,-5px);
+}
+.nn ul li:nth-child(4){
+  transform: rotate(10deg) skew(-30deg) translate(-20px,-20px);
+}
+.nn ul:hover li:nth-child(1){
+  transform: rotate(6deg) skew(0deg) translate(300px,0px);
+}
+.nn ul:hover li:nth-child(2){
+  transform: rotate(2deg) skew(0deg) translate(100px,0px);
+}
+.nn ul:hover li:nth-child(3){
+  transform: rotate(-2deg) skew(0deg) translate(-100px,0px);
+}
+.nn ul:hover li:nth-child(4){
+  transform: rotate(-6deg) skew(0deg) translate(-300px,0px);
+}
+.nn ul li:before{
+  content: '';
+  position:absolute;
+  width: 50%;
+  height: 4px;
+  left:0;
+  bottom: 0;
+  background: #fc2427;
+  transition: .5s;
+
+}
+.nn ul li:after{
+  content: '';
+  position:absolute;
+  width: 50%;
+  height: 4px;
+  right:0;
+  bottom: 0;
+  background: #262626;
+  transition: .5s;
+
+}
+.nn ul li:hover:before{
+  left:50%;
+}
+.nn ul li:hover:after{
+  right:50%;
+}
+#text{
+  background-image: url("img/bihu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}

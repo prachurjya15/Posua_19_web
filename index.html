@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POSUA</title>
+  
+  
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/aboutBox.css">
+  <link rel="stylesheet" href="css/styleEvent.css">
+  <script  src="wow.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+  
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/diary1.css">
+  <style>
+
+  html{
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    width:100vw;
+  }
+
+  @font-face{
+    font-family: 'Century';
+    src: url('century.ttf');
+  }
+
+  .dholiya{
+    position: absolute;
+    width:100vw;
+    height:100%;
+  }
+
+  .dholiya img{
+    position: absolute;
+    display: inline-block;
+    width: 20vw;
+    right: 10vw;
+    top: 36vh;
+    vertical-align: bottom;
+    transform: rotate(90deg);
+  }
+  .imagebihu{
+    position: absolute;
+    width:100vw;
+    height:100%;
+  }
+  .imagebihu img{
+    position:absolute;
+    display:inline-block;
+    width:65vw;
+    left:-18vw;;
+    bottom:0px;
+    vertical-align: bottom;
+  }
+  .trial{
+    height:500px;
+    position:relative;
+    z-index:10;
+  }
+  .trials{
+    height:20px;
+    position:relative;
+    z-index:200;
+    top:0px;
+    background-color:black;
+  }
+  .container1{
+    height:100vh;
+    width:100vw;
+    margin:0;
+    padding:0;
+  }
+
+  #posuaLoad{
+    flex-direction:row;
+    -webkit-flex-direction:row;
+    -ms-flex-direction:row;
+    -mos-flex-direction:row;
+    -o-flex-direction:row;
+    justify-content:center;
+    -webkit-justify-content:center;
+    -ms-justify-content:center;
+    height:100%;
+    width:100%;
+    background-color:#FFD454;
+    z-index:20000;  
+    position:fixed; 
+  }
+
+  .letter{
+    font-size:100px;
+    color:#222;
+    font-family:tahoma;
+  }
+
+  .box{
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .posuaLoadCircle, .posuaLoadInner, .posuaLoadCore{
+   border-radius:50%;
+   -webkit-border-radius:50%;
+   -moz-border-radius:50%;
+   -ms-border-radius:50%;
+ }
+
+ .posuaLoad, .letter, .posuaLoadCircle, .posuaLoadInner, .posuaLoadCore{
+  flex:none;
+  -webkit-flex:none;
+  -moz-flex:none;
+  -ms-flex:none;
+  -o-flex:none;
+}
+
+.letter, .posuaLoadCircle{
+  align-self:center;
+  -webkit-align-self:center;
+  -moz-align-self:center;
+  -o-align-self:center;
+  -ms-align-self:center;
+}
+.posuaLoadCircle{
+  align-items:center;
+  -ms-align-items:center;
+  justify-content:center;
+  -ms-justify-content:center;
+  height:100px;
+  width:100px;
+  background-color:#222;
+}
+
+.posuaLoadInner{
+  align-self:center;
+  -ms-align-self:center;
+  justify-content:center;
+  -ms-justify-content:center;
+  height:50%;
+  width:50%;
+  background-color:#FFD454;
+  -webkit-animation-name:posuaLoadAnimate;
+  -webkit-animation-duration:500ms;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+
+}
+.posuaLoadCore{
+  align-self:center;
+  -ms-align-self:center;
+  height:25%;
+  width:25%;
+  background-color:#222;
+  -webkit-animation-name:coreAnimate;
+  -webkit-animation-duration:1s;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes posuaLoadAnimate{
+  to{ height:90%; width:90%; }
+}
+@keyframes posuaLoadAnimate{
+  to{ height:90%; width:90%; }
+}
+
+@-webkit-keyframes coreAnimate{
+  to{ height:90%; width:90%; }
+}
+@keyframes coreAnimate{
+  to{ height:90%; width:90%; }
+}
+.aboutme{
+  font-size: 5vh;
+}
+/*.aboutme : after{
+  content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #50dfdb;
+    }*/
+
+    #text,#text1,#text2{
+      width: 75vw;
+      height: 75vh;
+      background-color: #f5e9e9;
+      position: relative;
+      top: -140vh;
+      left: 12vw;
+     transform: translate(0%,-130vh);*/
+      box-shadow: 5px 8px 8px #6d6565;
+      display: none;
+      transition: all linear 1s;
+
+    }
+
+    #text1{
+      top: -90vh;
+    }
+    #text2{
+      top: -20vh;
+    }
+
+    #text div h1,#text1 div h1,#text2 div h1{
+      font-weight: normal;
+      font-size: 6vh;
+      position: absolute;
+      top: 5vh;
+      left: 7vw;
+    }
+
+    #text div p,#text1 div p,#text2 div p{
+      font-size: 3.3vh;
+      letter-spacing: .1vw;
+      line-height: 4.5vh;
+      text-align: justify;
+      position: absolute;
+      width: 61vw;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 25%;
+      font-family: century;
+    }
+
+    #text div h1::before {
+     content: '';
+     position: absolute;
+     width: 150%;
+     height: 1px;
+     left: 0;
+     bottom: 0;
+     background: #392067;
+   }
+   #text1 div h1::before {
+     content: '';
+     position: absolute;
+     width: 150%;
+     height: 1px;
+     left: 0;
+     bottom: 0;
+     background: #392067;
+   }
+   #text2 div h1::before {
+     content: '';
+     position: absolute;
+     width: 150%;
+     height: 1px;
+     left: 0;
+     bottom: 0;
+     background: #392067;
+   }
+   .japi{
+     position: absolute;
+     width: 10vw;
+     height: 18vh;
+     top: 16%;
+     left: 20%;
+
+   }
+   .eventName{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+  }
+  .dhol{
+    width: 13vw;
+  }
+  .mobabout{
+    display: none;
+  }
+  .rootImg{
+    width: 75vw;
+    height: 83vh;
+    position: relative;
+    top: 10vh;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .roottext{
+    text-align: justify;
+    position: relative;
+    width: 39vw;
+    left: 52vw;
+    transform: translateX(-50%);
+    font-size: 3vh;
+    color: white;
+    top: -53vh;
+  }
+#trace{
+  display: none;
+}
+
+
+  @media(orientation:portrait){
+
+    .dholiya img{
+      top: 58vh;
+      height: 50vh;
+      z-index: 0;
+      width: 64vw;
+      right: -16vw;
+    }
+
+    .mobabout{
+      display: block;
+      font-size: 2.9vh;
+      text-align: justify;
+      position: relative;
+      top: 8vh;
+    }
+
+    .eventOuter{
+      display: none;
+    }
+
+    .imagebihu img{
+      position: absolute;
+      display: inline-block;
+      width: 87%;
+      left: -75px;
+      bottom: 15px;
+      vertical-align: bottom;
+      height: 50vh;
+    }
+
+    .dhol{
+      width: 20vw ;
+    }
+    .out{
+      display: none;
+    }
+    #canvas{
+      height: 100vh;
+    }
+
+    .nn ul li:nth-child(1){
+      transform: rotate(6deg) skew(0deg) translate(300px,0px);
+    }
+    .nn ul li:nth-child(2){
+      transform: rotate(2deg) skew(0deg) translate(100px,0px);
+    }
+    .nn ul li:nth-child(3){
+      transform: rotate(-2deg) skew(0deg) translate(-100px,0px);
+    }
+    .nn ul li:nth-child(4){
+      transform: rotate(-6deg) skew(0deg) translate(-300px,0px);
+    }
+
+    .nn ul li{
+      width: 24.2vw;
+      height: 300px;
+      cursor: pointer !important;
+    }
+
+    .japi{
+      width: 17vw;
+      height: 12vh;
+      top: 8%;
+      left: 18%;
+    }
+
+    .nn ul li span{
+      font-size: 2.2vh;
+    }
+    .eventName{
+      top: 41%;
+      width: 25vw;
+    }
+    #text , #text1,#text2{
+      width: 90vw;
+      height: 90vh;
+    }
+
+    #text div p, #text1 div p, #text2 div p {
+      font-size: 2.6vh;
+      letter-spacing: .01vw;
+      line-height: 3.5vh;
+      width: 75vw;
+    }
+    #trace{
+      display: block;
+    }
+
+  }
+
+
+
+</style>
+
+</head>
+
+<body id="bodyy">
+  <div id = "posuaLoad" class = "box">
+    <span class = "letter">P</span>
+
+    <div class = "posuaLoadCircle box">
+      <div class = "posuaLoadInner box">
+        <div class = "posuaLoadCore box"></div>
+
+      </div></div>
+
+      <span class = "letter box">S</span>
+      <span class = "letter box">U</span>
+      <span class = "letter box">A</span>
+    </div>
+      <!-- <div class="nav-trigger js_navbar">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <a href="#"> <li><h2 class="mt">Home</h2><i>Go to</i></li></a>
+          <a href="#"><li><h2 class="mb">About</h2><i>Me</i></li></a>
+          <a href="#"><li><h2 class="mt">Events</h2><i>My</i></li></a>
+          <a href="#"><li><h2 class="mb">Contact</h2><i>Me</i></li></a>
+        </ul>
+      </div> -->
+
+      <div id="outer">
+        <div class="container1" >
+          <div class="landscape"></div>
+          <div class="filter"></div>
+          <div class="outerCanvas"><canvas id="myCanvas"></canvas></div>
+          <div class= "imagebihu"> <img src="bihu.gif" alt=""> </div>
+          <div class= "dholiya"> <img src="img/bihu2.gif" alt=""> </div>
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>    
+      <div class="about" style="background: linear-gradient(to bottom, #000000, #dd1818);">
+
+        <div class="container">
+          <div class="aboutbox">
+            <span></span>
+
+            <span></span>
+
+            <div class="content">
+              <span class="aboutme" >ABOUT US</span>
+              <p class="mobabout" >Posua, the potent name itself oozes out a fresh aroma of sweetness from the rabid strokes of the storm. Time and again, it ushers in the notion of brotherhood in us , urges to imbibe the majesty of our region and unite under the same shed. We , the students of NITS find a noble motive under the venture of Posua to demonstrate the culture we boast of , to showcase different segments and bless the stage with the fragrance of our uniqueness. It's a monumental depiction of one's root , one's pride and one's ecstasy. It's a verbose exhibition propelling the innate love for your motherland. Posua is no longer a festival , it is a platform for self-actualisation. This time, like everytime we are determined and zealous to raise the bar and salve the ambiance with mirth and solace.   </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="eventOuter" style="background: linear-gradient(to bottom, #dd1818, #f7b733)">
+
+        <div class="events"><span>Events</span></div>
+        <div class="events-after"></div>
+        <div class="nn" style="overflow:hidden"><ul>
+          <div class="wow bounceInRight">
+            <li ><span id="gunjan"><img src="img/japi.png" class="japi"><span class="eventName">GUNJAN</span></span></li>
+            <li ><span id="bord"><img src="img/dhol.png" class="japi dhol"><span  class="eventName">BORDOISILA</span></span></li>
+            <li ><span id="pra"><img src="img/pepa.png" class="japi"><span class="eventName">PRATIDHWANI</span></span></li>
+            <li ><span id="man"><img src="img/japi.png" class="japi"><span class="eventName">MANTHAN</span></span></li>
+          </div>
+        </ul>
+      </div>
+      <div class="nn" style="overflow:hidden"><ul>
+        <div class="wow bounceInRight">
+          <li ><span id="kris"><img src="img/pepa.png" class="japi"><span class="eventName">KRISHTI</span></span></li>
+          <li ><span id="pari"><img src="img/dhol.png"  class="japi dhol"><span  class="eventName">PARIKRAMA</span></span></li>
+          <li ><span id="abhi"><img src="img/japi.png" class="japi"><span class="eventName" > ABHIJATRI</span></span></li>
+          <li ><span id="rang"> <img src="img/pepa.png" class="japi"><span  class="eventName">RANG-GHAR</span></span></li>
+        </div>
+      </ul>
+    </div>
+    <div class="nn" style="overflow:hidden"><ul>
+      <div class="wow bounceInRight">
+        <li ><span id="brohom"> <img src="img/dhol.png" class="japi dhol"><span class="eventName">BORHOMTHURI</span></span></li>
+        <li ><span id="rong"> <img src="img/japi.png"  class="japi"><span class="eventName">RONG TULIKA</span></span></li>
+        <li ><span id="ankuran"> <img src="img/pepa.png" class="japi"><span class="eventName">ANKURAN</span></span></li>
+      </div>
+    </ul>
+
+  </div>
+  <div style="width: 100vw;height: 100vh;">
+    <img src="book5s.png"  class="rootImg">
+    <h2 style="position: relative;
+    top: -58vh;
+    left: 43vw;font-size: 5vh;">TRACING THE ROOTS</h2>
+    <p class="roottext">The inception of Posua is the result of tireless devotion of some of our beloved seniors. Because of their unflinching zeal and dedication, we have grown with leaps and bounds and spread up our wings across all boundaries. Posua started on 2012, with   Tapobrat Saikia as the Convener
+Chao Samiran Gogoi as the General Secretary
+Bhashyajeet Patar as the Cultural Secretary
+Prasurjya Madhab Das as the  treasurer
+ Bhaskarjyoti Sarma and 
+Manjul Kumar Borah as the program Coordinators. Other members included Suman Pran Sonowal,Mayur Pran Borgohain,Varun Baruah, Rakesh Gogoi , Abhishek Bezbaruah to name a few. We are grateful for their ceaseless effort , who had sown the seeds of Posua and nourished it with care.
+
+</p>
+ </div>
+
+ <div id="text" >
+  <div style="font-size: 4vw;position: absolute;right: 25px;top: 15px;cursor: pointer;z-index: 99!important" id="close">&#10006;</div>
+  <div id="bkgrnd" style="width: 100%;height: 100%;background-image: url('img/bihu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;opacity: 0.3;z-index: -10;"></div>
+  <div id="gunjanText">
+    <h1>GUNJAN</h1>
+    <p>
+      The free spiritedness of open Husori Bihu finds the manifestation of the stage in this event called “Gunjan”. The beat of the dhol, with the traditional rhythms truly energies the environment transforming the atmosphere into a jubilant one.
+    </p>
+  </div>
+  <div id="bordText">
+    <h1>BORDOISILA</h1>
+    <p>
+      Bordoisila-the storm sweeping the campus of NITS by the scintillating performance of the gorgeous “Gabhorus” draped in the golden silk. The passion and richness of the spring overflows this event with fresh “Kopou”,“Gagana” ,“Gamkharu”, “Junbori”,“Hasoti”, and “Borhamthur”’ ornamenting their beauty.
+    </p>
+  </div>
+  <div id="praText">
+    <h1>PRATIDHWANI</h1>
+    <p>
+      The prosperous fields of Assam transforms into the platform for this energetic event “Pratidhwani”. The level of energy amplifies with several “Husori Dals” engaging in a healthy competition, presenting an excellent glimpse of the Greater Assamese Culture. 
+    </p>
+  </div>
+  <div id="manText">
+    <h1>MANTHAN</h1>
+    <p>
+     Manthan -the most awaited and anticipated of all the events of “Posua”. It reaches its zenith with the scintillating performance of some of the great performers of Assam. The likes of Zubeen Garg , Dikshu, Manash Robin and Simanta Shekar have already brightened the stage in the previous years. Their vibrant and zestful presence truly lifted everyone’s spirits and added new dimensions to the entire occasion. Even this time around, our entire NITS family is fully pumped out for all the enthralling performances on the same stage. 
+   </p>
+ </div>
+</div>
+
+<div id="text1">
+  <div id="bkgrnd" style="width: 100%;height: 100%;background-image: url('img/bihu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;opacity: 0.6;z-index: -1;"></div>
+  <span style="font-size: 45px;position: absolute;right: 25px;top: 15px;cursor: pointer;z-index: 99999!important" id="close1">&#10006;</span>
+  <div id="krisText">
+    <h1>KRISHTI</h1>
+    <p>
+      Assam-the land which has served as a perfect platform for the blending of various cultures and traditions of the people who had come since ages is now the home to a greater majestic society which is the amalgamation of this cultures. Be it Barak or Brahmaputra, we all are quilted in the same twine. Krishti gives us this golden opportunity to peep into this beautiful creation of time and how people from differen the states of India have made it  a confluence of peace and serenity.
+    </p>
+  </div>
+  <div id="pariText">
+    <h1>PARIKRAMA</h1>
+    <p>
+      Parikrama brings to the ramp the golden handloom of an “Axomiya Sipini”. “Deka/Gabhoru” dressed in glittering silk ornamented with traditional jewellery and handicrafts present a glance of the ethnic attires of the diverse cultures of “Bor Axom”.
+    </p>
+  </div>
+  <div id="abhiText">
+    <h1>ABHIJATRI </h1>
+    <p>
+      “The beauty of the world lies in the diversity of its people”.
+      India since millennium has embraced numerous communities and tribes into its fold whose assimilation led the Greater Indian Culture evolve. Holding our hands together as NITians, we will exhibit the timeline of our society, its festivals and rituals in this cultural rally we call “Abhijatri”.
+    </p>
+  </div>
+  <div id="rangText">
+    <h1>RANG-GHAR</h1>
+    <p>
+     The indigenous sports segment of “Posua” takes us back to the medieval Rangpur breezing in the amphitheatre of Ranghor. The event indulges us in salutary competition which extends our roots deeper into our culture.
+   </p>
+ </div>
+</div>
+
+<div id="text2">
+  <div id="bkgrnd" style="width: 100%;height: 100%;background-image: url('img/bihu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;opacity: 0.6;z-index: -1;"></div>
+  <span style="font-size: 4vw;position: absolute;right: 25px;top: 15px;cursor: pointer;z-index: 99999!important" id="close2">&#10006;</span>
+  <div id="brohomText">
+    <h1>BORHOMTHURI</h1>
+    <p>
+      Borhomthuri – the annual magazine on the occasion of “Posua” provides a golden opportunity to the family of NITS to pen down their emotions and thoughts. The magazine throws light on the literary skills of the students besides their technical aspects.
+    </p>
+  </div>
+  <div id="rongText">
+    <h1>RONG TULIKA</h1>
+    <p>
+      Rong Tulika -the art competition where the colours brightening our lives are poured into the pages. This provides an opportunity to explore the never ending world of imagination of the kids.
+    </p>
+  </div>
+  <div id="ankuranText">
+    <h1>ANKURAN</h1>
+    <p>
+      Ankuran fuses the innocence of a child with the richness of culture. The beats of the gracious Bihu moves amplified by the energy of the tiny kids can be witnessed in this event.  
+    </p>
+  </div>
+   <!-- <div id="rangText">
+    <h1>RANG-GHAR</h1>
+    <p>
+     The indigenous sports segment of “Posua” takes us back to the medieval Rangpur breezing in the amphitheatre of Ranghor. The event indulges us in salutary competition which extends our roots deeper into our culture.
+    </p>
+  </div> -->
+</div>
+</div>
+
+                    <!-- <div class="ocean">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                          </div> -->
+
+                          <div class="out" style="z-index:1000">
+                            <div class="diary">
+                              <div class="v-center"></div>
+                              <div id="container">
+                                <div class="book">
+                                  <div class="first paper">
+                                    <div class="page front contents">
+                                      <div class="intro">
+                                        <h2>POSUA</h2>
+                                        <h1>2019</h1>
+                                        <h3>ABOUT POSUA</h3>
+                                        <h4> To proceed</h4>
+                                        <h4> Please click on the diary</h4>
+
+                                      </div>
+                                    </div>
+                                    <div class="page back"></div>
+                                  </div>
+                                  <div class="second paper">
+                                    <div class="page front contents">
+                                      <div id="vara-container"></div>
+                                    </div>
+                                    <div class="page back"></div>
+                                  </div>
+                                  <div class="third paper">
+                                    <div class="page front contents">
+                                      <div id="vara-container2"></div>
+                                    </div>
+                                    <div class="page back"></div>
+                                  </div>
+                                  <div class="fourth paper">
+                                    <div class="page last front contents">
+                                      <div id="vara-container3"></div>
+                                    </div>
+                                    <div class="page back"></div>
+                                  </div>
+                                  <div class="side"></div>
+                                  <div class="bottom"></div>
+                                  <div class="shadow"></div>
+                                </div>
+                              </div>
+                              <a id="link" href="https://www.facebook.com/nitsposua/" target="_blank"></a>
+                            </div>
+                          </div>
+                          <div id="trace" style="height: 100vh;width: 100vw;padding: 5vw;
+    padding-top: 0;
+    background:linear-gradient(to bottom, #dd1818, #fe8c00);
+">
+<img src="book5srot.png" style="position: relative;
+    height: 100vh;
+    width: 69vh;
+    object-fit: fill;
+    /* left: 49vw; */
+    left: 43vw;
+    transform: translateX(-50%);">
+    <div style="position: relative;
+    top: -81vh;
+    text-align: center;
+    padding: 3vw;
+    font-size: 2.5vh;
+    font-weight: bold;
+}">
+      <h1>TRACING THE ROOTS</h1>
+   The inception of Posua is the result of tireless devotion of some of our beloved seniors. Because of their unflinching zeal and dedication, we have grown with leaps and bounds and spread up our wings across all boundaries. Posua started on 2012, with   Tapobrat Saikia as the Convener
+Chao Samiran Gogoi as the General Secretary
+Bhashyajeet Patar as the Cultural Secretary
+Prasurjya Madhab Das as the  treasurer
+ Bhaskarjyoti Sarma and 
+Manjul Kumar Borah as the program Coordinators. Other members included Suman Pran Sonowal,Mayur Pran Borgohain,Varun Baruah, Rakesh Gogoi , Abhishek Bezbaruah to name a few. We are grateful for their ceaseless effort , who had sown the seeds of Posua and nourished it with care.
+</div>
+
+
+                          
+                          <script src='https://rawcdn.githack.com/akzhy/Vara/c55a1b40c15b808cdd4a047de95c905094be87db/src/vara.min.js'></script>
+                          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+
+                          <script  src="js/diary1.js"></script>
+
+
+
+                          <script  src="js/navbar.js"></script>
+                          <script>
+                            var loadposua=document.getElementById("posuaLoad");
+                            var bodyy=document.getElementById("bodyy");
+                            window.addEventListener('load',function(){
+                              loadposua.style.display='none';
+                              bodyy.style.overflowY='scroll';
+
+
+                            })
+                          </script>
+
+                          <script type="text/javascript">
+
+
+                            var show =function(){
+                              document.getElementById('text').style.display='none';
+                              document.getElementById('gunjanText').style.display='none';
+                              document.getElementById('bordText').style.display='none';
+                              document.getElementById('praText').style.display='none';
+                              document.getElementById('manText').style.display='none';
+
+                              document.getElementById('text1').style.display='none';
+                              document.getElementById('krisText').style.display='none';
+                              document.getElementById('pariText').style.display='none';
+                              document.getElementById('abhiText').style.display='none';
+                              document.getElementById('rangText').style.display='none';
+
+                              document.getElementById('text2').style.display='none';
+                              document.getElementById('brohomText').style.display='none';
+                              document.getElementById('rongText').style.display='none';
+                              document.getElementById('ankuranText').style.display='none';
+                            } 
+
+                            document.getElementById('gunjan').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text').style.display='block';
+                              document.getElementById('gunjanText').style.display='block';
+                            })
+
+                            document.getElementById('bord').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text').style.display='block';
+                              document.getElementById('bordText').style.display='block';
+                            })
+
+                            document.getElementById('pra').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text').style.display='block';
+                              document.getElementById('praText').style.display='block';
+                            })
+
+                            document.getElementById('man').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text').style.display='block';
+                              document.getElementById('manText').style.display='block';
+                            })
+
+                            document.getElementById('kris').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text1').style.display='block';
+                              document.getElementById('krisText').style.display='block';
+                            })
+
+                            document.getElementById('pari').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text1').style.display='block';
+                              document.getElementById('pariText').style.display='block';
+                            })
+
+                            document.getElementById('abhi').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text1').style.display='block';
+                              document.getElementById('abhiText').style.display='block';
+                            })
+
+
+                            document.getElementById('rang').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text1').style.display='block';
+                              document.getElementById('rangText').style.display='block';
+                            })
+
+                            document.getElementById('brohom').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text2').style.display='block';
+                              document.getElementById('brohomText').style.display='block';
+                            })
+                            document.getElementById('rong').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text2').style.display='block';
+                              document.getElementById('rongText').style.display='block';
+                            })
+                            document.getElementById('ankuran').addEventListener("click",function(){
+                              show();
+                              document.getElementById('text2').style.display='block';
+                              document.getElementById('ankuranText').style.display='block';
+                            })
+
+
+                            document.getElementById('close').addEventListener("click",function(){
+                              document.getElementById('text').style.display='none';
+                            })
+                            document.getElementById('close1').addEventListener("click",function(){
+                              document.getElementById('text1').style.display='none';
+                            })
+                            document.getElementById('close2').addEventListener("click",function(){
+                              document.getElementById('text2').style.display='none';
+                            })
+                          </script>
+                          <script  src="js/index.js"></script>
+
+
+                        </body>
+
+                        </html>

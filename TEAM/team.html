@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEAM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	 <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<style type="text/css">
+body,html{
+	margin: 0;
+	font-family: sans-serif;
+}
+     header{display: flex;
+	justify-content:Team-between;
+	padding: 20px;
+	align-items:center;
+	font-family: 'Quicksand', sans-serif;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	opacity:0;
+	
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 0vh;
+	color: red;
+	background-color: black;
+	overflow-x: hidden;
+}
+@keyframes fadeIn{
+	100%{opacity:1;}
+}
+nav{
+	display: flex;
+	padding: 10px;	list-style: none;
+}
+
+a{
+	text-decoration:none;
+	margin-right: 2vw;
+	color: white;
+}
+a:hover{
+	color: red;
+	transition: linear 0.2s;
+}
+	#container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:Teamr;
+	}
+	
+	.teamname{
+		flex-basis: 100vw;
+		height: 10vh;
+		margin-bottom:  1vw;
+		text-align: center;
+		color: red;
+		margin-top: 0;
+		padding-top: 5vh;
+		font-weight: bold;
+		font-size: 1.9em;
+	
+	}
+	.team1{
+		flex-basis: 100vw;
+		height: 43vh;
+		background-color: white;
+		margin: 1vw;
+		text-align: center;
+	}
+	.team2{
+		flex-basis: 47vw;
+		height: 43vh;
+		background-color: white;
+		margin: 1vw;
+		text-align: center;
+	}
+	.team3{
+		flex-basis: 30vw;
+		height: 43vh;
+		background-color: white;
+		margin: 1vw;
+		text-align: center;
+	}
+	.team4{
+		flex-basis: 21vw;
+		height: 43vh;
+		background-color: white;
+		margin: 1vw;
+		text-align: center;
+	}
+	.name{
+		flex-basis: 100vw;
+		height: 10vh;
+		letter-spacing: 1.1vw;
+		padding: 1vh;
+		text-align: center;
+		font-family: arial;
+		color: gray;
+	}
+	
+	img{
+		width: 14vw;
+		height: 14vw;
+		object-fit: cover;
+
+	}
+	img:hover{
+		border:2px solid red;
+		transition: linear 0.2s;
+	}
+	a>i{
+		color: grey;
+	}
+	a>i:hover{
+      color:red;
+	}
+	.cover{
+		object-fit: cover;
+	}
+
+	
+	footer {
+	display: flex;
+	align-items: center;
+	justify-content:Teamr;
+	background-color: black;
+	color: #fff;
+	padding: 20px 0;
+	width: 100%;
+	height: 1vh;
+	margin-top: 8vh;
+}
+	@media(max-width: 600px){
+		.team1,.team2,.team3,.team4{
+			flex-basis: 100vw;
+			margin-bottom: 20px;
+
+		}
+		.otherteam{
+			flex-basis: 72vw;
+			height: 73vh;
+			font-size:3vh;
+		}
+		img{
+			height: 33vw;
+			width: 33vw;
+		}
+		#vol-head>p{
+			font-size: 12px;
+		}
+		nav{
+			font-size: 3vw;
+		}
+
+        
+	}
+	
+
+</style>
+<body>
+	<header><h2 style="margin-left:5vw">POSUA</h2>
+<nav>
+	<li><a href="#">ABOUT</a></li>
+	<li><a href="#">EVENTS</a></li>
+	</nav></header>
+
+
+	<div id="container">
+		<div class="teamname">THE TEAMS</div>
+		<div class="team2"><img src="photos/director.png" style="border-radius:50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold;">Dr.SHIVAJI BANDYOPADHYAY</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Chief Patron</p>
+          <a href="https://www.facebook.com/director.nitsilchar/"><i class="fab fa-facebook-f"></i></a>       
+      </div></div>
+		<div class="team2"><img src="photos/deansw.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">Dr.R.K.MISHRA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Patron</p>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+      <div class="team2"><img src="photos/president.jpg" style="border-radius:50%;">
+			<div class="info">
+          <p style="color: red;font-weight: bold;">DR.SAMIR KR. BORGOHAIN</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">PRESIDENT</p>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+           
+          
+           
+      </div></div>
+		<div class="team2"><img src="photos/lalit.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">DR.LALIT CHANDRA SAIKIA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">VICE PRESIDENT</p>
+          <a href="https://www.facebook.com/lalitchandra.saikia"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+     
+
+ <div class="team3"><img src="photos/ankan.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">ANKAN KISHORE PATHAK</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">GENERAL SECRETARY(G.U.B 2018-19)</p>
+          <a href="https://www.facebook.com/profile.php?id=100005991073168"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/anirban.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">ANIRBAN ROY</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">VICE PRESIDENT(G.U.B 2018-19)</p>
+          <a href="https://www.facebook.com/royanirban36"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/victor.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">VICTOR DAS</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">G.S. CULTURAL(G.U.B 2018-19)</p>
+          <a href="https://www.facebook.com/victordas96?ref=br_rs"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+
+
+		<div class="team3" "><img src="photos/pallab.jpg" style="border-radius: 50%;">
+			<div class="info">
+          <p style="color: red;font-weight: bold">PALLAB BORGOHAIN</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">CONVENER</p>
+          <a href="https://www.facebook.com/profile.php?id=100007952741353"><i class="fab fa-facebook-f"></i></a>
+          </div>
+
+		</div>
+
+		<div class="team3"><img src="photos/deep.jpg" style="border-radius:50%;">
+			<div class="info">
+          <p style="color: red;font-weight: bold;">DEEP DAS</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Chief Co-ordinator</p>
+          <a href="https://www.facebook.com/profile.php?id=100009763817131"><i class="fab fa-facebook-f"></i></a>
+           
+          
+           
+      </div></div>
+		<div class="team3"><img src="photos/mridu.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">MRIDUPAWAN DEKA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Treasurer</p>
+          <a href="https://www.facebook.com/mridupawan.deka.9"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+
+       <!-- EXECUTIVE -->
+		<div class="name"><p>EXECUTIVE HEADS</p></div>
+      <div class="team2">
+      	<img src="photos/mrinmay.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">MRINMOY BRAHMA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Head</p>
+          <a href="https://www.facebook.com/mrinmoysonline"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team2"><img src="photos/ashraful.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">ASHRAFUL ISLAM</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Head</p>
+          <a href="https://www.facebook.com/ashrafulislam570"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+      
+       <!-- MARKETING -->
+		<div class="name"><p>MARKETING TEAM</p></div>
+             <div class="team2"><img src="photos/arnab.jpg" style="border-radius: 50%">
+			<div class="info">
+				<!-- DOUBT WHO IS ARNAB BARUAH IS IT ARNAB PAASHAR???? -->
+          <p style="color: red;font-weight: bold">ARNAB BARUAH</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Marketing Head</p>
+          <a href="https://www.facebook.com/arnab.boruah.946"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+      <div class="team2"><img src="photos/abhi2.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">ABHISHEK BORA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Marketing Head</p>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       
+      <!-- INFRA -->
+		<div class="name"><p>INFRA TEAM</p></div>
+            <div class="team3"><img src="photos/manab.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">MANABENDRA DAS</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Infra Head</p>
+          <a href="https://www.facebook.com/mmanabendra.das"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/bijit.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">BIJIT SARKAR</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Infra Head</p>
+          <a href="https://www.facebook.com/bijit.sarkar.56"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/priyanuj.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">PRIYANUJ MISRA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Infra Head</p>
+          <a href="https://www.facebook.com/priyanuj.misra"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       <!-- EVENT MANAGEMENT -->
+		<div class="name"><p>EVENT MANAGEMENT TEAM</p></div>
+      <div class="team3"><img src="photos/risav.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Risav Krishna Baruah</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Event Management Head</p>
+	  <a href="https://www.facebook.com/RKB123"><i class="fab fa-facebook-f"></i></a>
+	  
+  </div></div>
+   <div class="team3"><img src="photos/hrishi.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Hrishikesh Boruah</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Event Management Head</p>
+	  <a href="https://www.facebook.com/ricky.boruah.1"><i class="fab fa-facebook-f"></i></a>
+	  
+  </div></div>
+   <div class="team3"><img src="photos/susmita.jpg" style="border-radius:50%">
+	<div class="info">
+  <p style="color: red;font-weight: bold;">Susmita Basumatary</p>
+  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Event Management Head</p>
+  <a href="https://www.facebook.com/sushmita.basumatary.90"><i class="fab fa-facebook-f"></i></a>   
+</div></div>
+
+      <!-- WEB-TEAM -->
+		<div class="name"><p>WEB TEAM</p></div>
+            <div class="team4"><img src="photos/tukan.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">TUKAN DUTTA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Web Developer</p>
+          <a href="https://www.facebook.com/tukan.dutta"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team4"><img src="photos/tushar.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">TUSHAR SARMA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Web Developer</p>
+          <a href="https://www.facebook.com/2sar6"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team4"><img src="photos/prachurjya.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">PRACHURJYA BASISTHA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Web Developer</p>
+          <a href="https://www.facebook.com/profile.php?id=100009571023348"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       
+       <div class="team4"><img src="photos/hilul.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">Hilul Saikia</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Web Developer</p>
+          <a href="https://www.facebook.com/profile.php?id=100009870751702"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+
+      <!-- DESIGN -->
+		<div class="name"><p>DESIGN TEAM</p></div>
+       <div class="team3"><img src="photos/priyam.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">PRIYAM BHARADWAZ</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Design Head</p>
+          <a href="https://www.facebook.com/priyam.bhardwaj8"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/samim.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">Md. SAMIM JAHIN</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Design Head</p>
+          <a href="https://www.facebook.com/msamimj"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/akash.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">AKASHJYOTI HAZARIKA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Design Head</p>
+          <a href="https://www.facebook.com/akash.hazarika.69"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       <div class="team2"><img src="photos/rituraj.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">RITURAJ NATH</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Designer</p>
+          <a href="https://www.facebook.com/sririturajnath.ritu"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       <div class="team2"><img src="photos/mriganka.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">MRIGANKA BARUAH</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Designer</p>
+          <a href="https://www.facebook.com/mriganka.baruah.315"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+      <div class="team3"><img src="photos/medhi.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">NISHANTA MEDHI</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Designer</p>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+      <div class="team3"><img src="photos/abhilekh.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">ABHILEKH DEKA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Designer</p>
+          <a href="https://www.facebook.com/abhilekhnarayan.deka"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       <div class="team3"><img src="photos/pranjit.jpg" style="border-radius: 50%;object-fit: contain;">
+			<div class="info">
+          <p style="color: red;font-weight: bold">PRANJIT GAUTAM</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Designer</p>
+          <a href="https://www.facebook.com/pranjit.gautam.5"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+     
+      <!-- PUBLICATION -->
+		<div class="name"><p>PUBLICATION & MAGAZINE TEAM</p></div>
+      <div class="team1"><img src="photos/nayanjb.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">NAYAN JYOTI BAYAN</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Magazine & Publication Head</p>
+          <a href="https://www.facebook.com/S.NayanZubeen"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+        <!-- HOSPITALITY -->
+		<div class="name"><p>HOSPITALITY TEAM</p></div>
+   <div class="team3"><img src="photos/dharitri.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">DHARITRI GOGOI</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Hospitality Head</p>
+	  <a href="https://www.facebook.com/dharitri.gogoi.3762"><i class="fab fa-facebook-f"></i></a>
+	  
+  </div></div>
+   <div class="team3"><img src="photos/dulu.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">DULU DAS</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Hospitality Head</p>
+	  <a href="https://www.facebook.com/mridupaban.das.58"><i class="fab fa-facebook-f"></i></a>
+  </div></div>
+   <div class="team3"><img src="photos/akash2.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">AKASH JYOTI SAIKIA</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Hospitality Head</p>
+	  <a href="https://www.facebook.com/akashjyoti.saikia.94"><i class="fab fa-facebook-f"></i></a>
+  </div></div>
+    
+      <!-- DECORATION -->
+		<div class="name"><p>DECORATION TEAM</p></div>
+       <div class="team3"><img src="photos/nayan2.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">NAYAN AHMED</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Decoration Head</p>
+          <a href="https://www.facebook.com/nayan.ahmed.58367"><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/rahul.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">RAHUL BARUAH</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Decoration Head</p>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          
+      </div></div>
+       <div class="team3"><img src="photos/richa.jpg" style="border-radius: 50%;object-fit: contain;">
+			<div class="info">
+          <p style="color: red;font-weight: bold">RICHA NEOG</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Decoration Head</p>
+          <a href="https://www.facebook.com/richaevangel.neog"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+       <!-- PUBLICITY -->
+		<div class="name"><p>PUBLICITY TEAM</p></div>
+
+  <div class="team2"><img src="photos/gaurima.jpg" style="border-radius: 50%">
+	<div class="info">
+  <p style="color: red;font-weight: bold">Gaurima Das</p>
+  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Publicity Head</p>
+  <a href="https://www.facebook.com/profile.php?id=100009459645001"><i class="fab fa-facebook-f"></i></a>
+  
+</div></div> 
+<div class="team2"><img src="photos/aakanshya.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Aakankshya Das</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Publicity Head</p>
+	  <a href="https://www.facebook.com/aakankshya.das.33"><i class="fab fa-facebook-f"></i></a>
+  </div></div> 
+
+      
+	  <!-- LOGISTICS -->
+		<div class="name"><p>LOGISTICS TEAM</p></div>
+  <div class="team3"><img src="photos/madhurjya.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">MADHURJYA BORGOHAIN</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Logistics Head</p>
+	  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  </div></div>
+  <div class="team3"><img src="photos/bedanta.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">BEDANTA KALITA</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Logistics Head</p>
+          <a href="https://www.facebook.com/bedanta.kalita"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+
+	  <div class="team3"><img src="photos/moni.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">Moni Kongkon</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Logistics Head</p>
+          <a href="https://www.facebook.com/mac.hotford"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+   
+	  <!-- CONTENT Head-->
+		<div class="name"><p>CONTENT TEAM</p></div>
+	  <div class="team3"><img src="photos/pulakesh.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Pulakesh kr. Das</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Content Team Head</p>
+	  <a href="https://www.facebook.com/pulak.pritam.3"><i class="fab fa-facebook-f"></i></a>
+	  
+  </div></div>
+   <div class="team3"><img src="photos/nayan3.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Nayan Jyoti Mahapurusia</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Content Team Head</p>
+	  <a href="https://www.facebook.com/nayanjyoti.mahapurushia"><i class="fab fa-facebook-f"></i></a>
+	  
+  </div></div>
+   <div class="team3"><img src="photos/abhi.jpg" style="border-radius: 50%">
+		<div class="info">
+	  <p style="color: red;font-weight: bold">Abhishek Kr. Sharma</p>
+	  <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Content Team Head</p>
+	  <a href="https://www.facebook.com/abhishekkumar.sharma.96930"><i class="fab fa-facebook-f"></i></a>
+  </div></div>
+  <!-- pg rep -->
+		<div class="name"><p>PG REPRESENTATIVES</p></div>
+  <div class="team4"><img src="photos/sagar.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">SAGAR TALUKDAR</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">PG Representative</p>
+    <a href="https://www.facebook.com/sagartalukdar56"><i class="fab fa-facebook-f"></i></a>
+  </div></div> 
+  <div class="team4"><img src="photos/tutu.jpg" style="border-radius: 50%;object-fit: contain;">
+    <div class="info">
+    <p style="color: red;font-weight: bold">TUTU MONI KASHYAP</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">PG Representative</p>
+    <a href="https://www.facebook.com/tmkashyap"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+   <div class="team4"><img src="photos/sukanya.png" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">SUKANYA SARKAR</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">PG Representative</p>
+    <a href="https://www.facebook.com/profile.php?id=100002953250188"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+   <div class="team4"><img src="photos/kalyani.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">KALYANI RAJKUMARI</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">PG Representative</p>
+    <a href="https://www.facebook.com/kalyani.rajkumari.56"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+	 
+<!-- EXECUTIVE MEMBERS -->
+		<div class="name"><p>EXECUTIVE MEMBERS</p></div>
+<div class="team4"><img src="photos/tanmita.jpg" style="border-radius: 50%">
+			<div class="info">
+          <p style="color: red;font-weight: bold">TANMITA DAS</p>
+          <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+          <a href="https://www.facebook.com/profile.php?id=100006756915568&lst=100009571023348%3A100006756915568%3A1551003541"><i class="fab fa-facebook-f"></i></a>
+      </div></div>
+ <div class="team4"><img src="photos/hiren.jpg" style="border-radius: 50%;object-fit: contain;">
+    <div class="info">
+    <p style="color: red;font-weight: bold">HIREN TAYUNG</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/tayungmghiren"><i class="fab fa-facebook-f"></i></a> 
+  </div></div>
+   <div class="team4"><img src="photos/sourav.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">SOURAV MAZUMDAR</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/sourabh.majumdar.524"><i class="fab fa-facebook-f"></i></a>
+  </div></div> 
+  <div class="team4"><img src="photos/arnab2.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">ARNAB SARMAH</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/tweet.arnab"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+   <div class="team4"><img src="photos/keot.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">MADHURJYA KEOT</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/madhurjya.keot.3"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+   <div class="team4"><img src="photos/ahmed.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">SHAHID AHMED</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/shahid.ahmed.52090"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+  <div class="team4"><img src="photos/bhargav.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">BHARGAV DOLEY</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/profile.php?id=100010572912270"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+ <div class="team4"><img src="photos/nishank.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">NISHANK DAS</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/nishank.das"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+   <div class="team3"><img src="photos/noor.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">NOOR MD. KHANDAKAR</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/profile.php?id=100010572912270"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+  <div class="team3"><img src="photos/dhurbo.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">DHRUBAJYOTI KALITA</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+  <div class="team3"><img src="photos/anish.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">ANISH PAUL</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/anishpaul.username"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+  <div class="team2"><img src="photos/pranjal.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">PRANJAL DAS</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/pranjal.kashyap.965"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+  <div class="team2"><img src="photos/deba.jpg" style="border-radius: 50%">
+    <div class="info">
+    <p style="color: red;font-weight: bold">DEBADITYA KASHYAP</p>
+    <p style="color: grey;font-size: 12px;letter-spacing: 5px;">Executive Member</p>
+    <a href="https://www.facebook.com/debadityakashyap"><i class="fab fa-facebook-f"></i></a>  
+  </div></div>
+
+
+    <footer></footer>
+     
+
+	</div>
+
+</body>
+</html>
